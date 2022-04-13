@@ -24,12 +24,16 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #333;
+
+    overflow-x: hidden;
 }
 
-html,
-body {
-    height: 100%;
-}
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
 
 img {
     width: 100%;
