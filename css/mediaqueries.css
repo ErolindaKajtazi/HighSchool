@@ -142,6 +142,7 @@
     .row {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         row-gap: 3.2rem;
         flex-wrap: wrap;
     }

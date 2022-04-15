@@ -92,7 +92,7 @@
 
 .teachers {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
