@@ -43,23 +43,29 @@
         position: relative;
     }
 
-    .open-nav .nav-bar {
-        display: block;
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar {
         position: absolute;
         background-color: rgba(97, 44, 140, 0.9);
         top: 0%;
         left: 0%;
         width: 100%;
-        height: 55vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
         z-index: 999;
 
     }
 
-    .open-nav .nav-bar .nav-list {
+    .nav-bar .nav-list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -76,14 +82,12 @@
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
-        left: 0;
+        left: 0%;
     }
-
-
 
     .open-nav ion-icon[name="close-outline"] {
         display: block;
-        position: fixed;
+        position: relative;
         font-size: 4.8rem;
         z-index: 9999;
     }
@@ -142,10 +146,10 @@
         row-gap: 3.2rem;
         flex-wrap: wrap;
     }
-
+/* 
     .teachers {
         width: 50%;
-    }
+    } */
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);

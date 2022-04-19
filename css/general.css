@@ -81,6 +81,18 @@ img {
 }
 
 .header {
+    /* font-size: 1.8rem;
+    background-color: #330662;
+    color: #F2F2F2;
+    padding: 1rem 2rem;
+    position: relative;
+    height: 6rem;
+    font-weight: 600; */
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.8rem;
     background-color: #330662;
     color: #F2F2F2;
@@ -88,12 +100,6 @@ img {
     position: relative;
     height: 6rem;
     font-weight: 600;
-}
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    justify-items: flex-start;
 }
 
 .main-header nav ul li {
