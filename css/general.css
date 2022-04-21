@@ -140,3 +140,19 @@ img {
 .reg:active, .reg:hover {
     background-color: #57068c;
 }
+
+.mobile-nav {
+    border: none;
+    padding: 1.6rem;
+    background-color: transparent;
+}
+
+.mobile-nav .mobile-nav-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}

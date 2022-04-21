@@ -39,21 +39,21 @@
         font-size: 30%;
     }
 
-    .header {
+    .main-header {
         position: relative;
     }
 
-    .nav-bar {
-        display: none;
+    .mobile-nav {
+        display: block;
     }
 
     .nav-bar {
-        position: absolute;
+        position: fixed;
         background-color: rgba(97, 44, 140, 0.9);
         top: 0%;
         left: 0%;
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,8 +61,15 @@
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
-        z-index: 999;
+        z-index: 10;
 
+    }
+
+    .open-nav .nav-bar {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        left: 0%;
     }
 
     .nav-bar .nav-list {
@@ -78,22 +85,20 @@
 
     }
 
-    .open-nav .nav-bar {
-        opacity: 1;
-        pointer-events: auto;
-        visibility: visible;
-        left: 0%;
+    .open-nav button {
+        position: fixed;
+        right: 2.8rem;
+        top: 1.4rem;
+        z-index: 99999;
     }
 
     .open-nav ion-icon[name="close-outline"] {
-        display: block;
-        position: relative;
-        font-size: 4.8rem;
-        z-index: 9999;
+        display:block;
     }
 
     .open-nav ion-icon[name="menu-outline"] {
         display: none;
+        z-index: 99999;
     }
     .hero {
         grid-template-columns: 1fr;
@@ -123,7 +128,7 @@
 @media (max-width: 600px){
 
     html {
-        font-size: 25%;
+        font-size: 30%;
     }
 
     .grid-col {
@@ -146,10 +151,14 @@
         row-gap: 3.2rem;
         flex-wrap: wrap;
     }
-/* 
-    .teachers {
-        width: 50%;
-    } */
+
+    .teacher {
+        width: 60%;
+    }
+
+    .teacher h4 {
+        font-size: 2.8rem;
+    }
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
