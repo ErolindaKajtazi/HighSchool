@@ -145,6 +145,7 @@ img {
     border: none;
     padding: 1.6rem;
     background-color: transparent;
+    display: none;
 }
 
 .mobile-nav .mobile-nav-icon {
